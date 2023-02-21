@@ -1,0 +1,17 @@
+using System;
+
+class Program {
+    static void Main() {
+        Random rand = new Random();
+        while (true) {
+            Console.Write("Generate next random number? (y/n) ");
+            string input = Console.ReadLine();
+            if (input == "n") {
+                break;
+            }
+            int number = rand.Next();
+            Console.WriteLine("Random number: {0}", number);
+        }
+        Console.WriteLine("Program ended.");
+    }
+}
